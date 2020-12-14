@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<bean id="shapearea"  class="democorespring.shape_demo.bean.ShapeArea">
+<property name="shape" ref="rectangle"/>
+</bean>
+
+<bean id="circle"  class="democorespring.shape_demo.bean.Circle">
+<property name="radius" value="5"/>
+</bean>
+
+<bean id="rectangle"  class="democorespring.shape_demo.bean.Rectangle">
+<property name="length" value="5"/>
+<property name="breadth" value="7"/>
+
+</bean>
+
+
+
+
+</beans>
